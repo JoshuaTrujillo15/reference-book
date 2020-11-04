@@ -1,0 +1,33 @@
+//COMMENTS :D
+//anything to be replaced by value will be <value_name>
+//query delimiter ";"
+
+//Log in to mysql in terminal
+mysql -u <username> -p
+<password>
+
+//Create database
+CREATE DATABASE <database>;
+
+//Use database
+use <database>;
+
+//Create table
+CREATE TABLE <table>
+VALUES (<value_id> INT NOT NULL AUTO_INCREMENT, <value> <datatype> <parameters>, PRIMARY KEY (<value_id>));
+
+//insert values
+//i prefer this to not cause issues with auto incrementing id value
+INSERT INTO <table> (<columns>) VALUES (<values>);
+
+//update
+UPDATE <table> SET <column> = <value> WHERE <condition>;
+
+//Remove values
+DELETE FROM <table> WHERE <condition>;
+
+//drop table
+DROP TABLE <table>;
+
+//select
+SELECT * FROM <table> WHERE <condition>
